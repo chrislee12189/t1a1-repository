@@ -4,10 +4,12 @@
 
 # **Question 1: Identify and explain common and important components and concepts of web development markup languages.**
 
-Three popular markup languags that you are likely to encounter in your career in computer science are: HTML, XML and XHTML. These versions share similarites and differences; as the internet evolves and grows, so do markup languages. However, with an evolving web environment, continuity and compatability issues can arise. This issue was predicted and as such, versions of HTML represent standardized improvements to the foundational language for the World Wide Web.
-As technology improves and develops, the methodology to achieve desired web page results evolves alongside it.  
+Three popular markup languags that you are likely to encounter in your career in computer science are: HTML, XML and XHTML. These versions share similarites and differences; as the internet evolves and grows, so do markup languages. However, with an evolving web environment, continuity and compatability issues can arise. This issue was predicted and as such, versions of HTML represent standardized improvements to the foundational language for the World Wide Web. This standardization however, does not mean that these markup languages do not have their differences. For example, when comparing the functionality of HTML and XML, it would be important to note that although they do similar things, how they do it is rather different. XML focuses on transporting data without any management towards the presentation of the document -for lack of a better word. This means, XML is very easy to work with. HTML however, focuses on the presentation of the document and as a consequence, its coding can become rather complex. 
+Due to the aftermentioned standardization practices, both XML and HTML can work together.
 
-Important components of web pages are things such as tables, forms, lists, headings and style. In order for a browser to be able to interpret and reproduce information in the way we want, we need to provide a uniform structure to the web pages we create. Structuring our web page to explain where to place certain content, how certain content should look and even conditions upon how we want content to behave allows use to produce reliable, intentional and reproducable outcomes.  
+Markup languages sharing compatability is great and all, but why do we even need markup languages in the first place?
+
+In order for a browser to be able to interpret and reproduce information in the way we want, we need to provide a uniform structure to the web pages we create. Structuring our web page to explain where to place certain content, how certain content should look and even conditions upon how we want content to behave allows use to produce reliable, intentional and reproducable outcomes. This is where markup languages come into play, markup languages have the power needed for us to control very important components of web pages. Important components of web pages are things such as tables, forms, lists, headings and style. 
 
 # **Question 2: Define the features of the following technologies that are essential in terms of the development of the internet**:
  - _packets_
@@ -42,3 +44,8 @@ Routers are used to connect devices such as computers or phones to the internet.
 Earlier, i wrote about packets. Thats how information is broken down for "shipment". I then spoke about IP addresses, thats how the "shipment" knows where to go and where it came from. All of that is great but without routers, it doesnt mean much. See, the purpose of a router is to provide the framework for the other two actions to take place. Meaning, without network connectivity, the rest is meaningless. Routing is the ability to send or forward packets from my network to someone elses network (or vice versa).The role of the router is to connect the 2 (or more) networks and then manage the traffic within. Using something called a routing table (list of all possible paths on the network) routers are able to recieve packets, crosscheck the routing table and then figure out the fastest path to send that data along.
 Because of its capability to route traffic between devices and the internet, your home devices are able to connect to the internet.
 In terms of the development of the internet, routers are responsible for security, connectivity, packet filtering etc. These tasks are incredibly fascinating and seem to occur seemlessly thanks to the technology involved.  
+
+hi 
+hi      hi
+    hi 
+        hi
