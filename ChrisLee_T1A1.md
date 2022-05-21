@@ -9,7 +9,7 @@ Due to the aftermentioned standardization practices, both XML and HTML can work 
 
 Markup languages sharing compatability is great and all, but why do we even need markup languages in the first place?
 
-In order for a browser to be able to interpret and reproduce information in the way we want, we need to provide a uniform structure to the web pages we create. Structuring our web page to explain where to place certain content, how certain content should look and even conditions upon how we want content to behave allows use to produce reliable, intentional and reproducable outcomes. This is where markup languages come into play, markup languages have the power needed for us to control very important components of web pages. Important components of web pages are things such as tables, forms, lists, headings and style. 
+In order for a browser to be able to interpret and reproduce information in the way we want, we need to provide a uniform structure to the web pages we create. Structuring our web page to explain where to place certain content, how certain content should look and even conditions upon how we want content to behave allows use to produce reliable, intentional and reproducable outcomes. This is where markup languages come into play, markup languages have the power needed for us to control very important components of web pages. Important components of web pages are things such as tables, forms, lists, headings and style. Using markup languages such as HTML, we can format our document and provide that information to the browser so that it replicates it on the web!
 
 # **Question 2: Define the features of the following technologies that are essential in terms of the development of the internet**:
  - _packets_
@@ -23,7 +23,7 @@ In order for a browser to be able to interpret and reproduce information in the 
 This is where packets come in. <br>
 </br> Data is broken into packets in order to decrease latency and increase overall efficiency of the journey from one computer to another. These packets are sent as incredibly small, deconstructed "packages" which can then be reconstructed on the recieving end.  
 Packets are seperated into incredibly small pieces of data - **_64kb_**- each of these pieces of data carries information that i being sent from one computer to another. For example; some of these packets will contain information regarding the sender, such as their ip address, others will contain information that explains how many packets the reciever should expect to see. Other packets serve purposes such as informing the recieving computer when it has reached the end of the packet sequence.<br>  
-</br>Because of the way this data is structure during sending, we are able to communicate with large networks and send information across the globe seemingly instantly. In terms of the development of the internet, i strongly believe that packets have contributed massively. Without packets, trasnfer efficiency of data  would be congested and slow, it would be a nightmare in todays world and would seriously hinder the progression and development of tech.
+</br>Because of the way this data is structure during sending, we are able to communicate with large networks and send information across the globe seemingly instantly. In terms of the development of the internet, i strongly believe that packets have contributed massively. Without packets, trasnfer efficiency of data  would be congested and slow, it would be a nightmare in todays world and would seriously hinder the progression and development of tech.  
 <br>
 ![packets pic](./packets.png)
 </br>
@@ -34,8 +34,12 @@ One of the shortcomings of ipv4 is the sheer amount of hardware that exsits in t
 An example of an ipv6 IP address is: **2002:0de6:0001:0042:0100:8c2e:0370:7234**   
 One of the benefits of such a complex string of numbers and letters is that even in 2022, each device can have its own IP address, as opposed to needing to reuse addresses or mask them.<br> 
 </br> In todays tech world, both ipv4 and ipv6 are in use. As tech continues to develop and old technology is retired, the use of ipv4 will slowly begin to decline until it is replaced entirely by ipv6.  
-In terms of the development of the internet, ipv6 was an incredibly intelligent piece of technology implemented as a means to fix an originally unforseen problem. Its mere existence is nothing short of completely neccessary in todays world and its implementation is, in my opinion, an incredibly impressive feat of intelligence, perserverance and quick-thinking-problem-solving completed by engineers.
+In terms of the development of the internet, ipv6 was an incredibly intelligent piece of technology implemented as a means to fix an originally unforseen problem. Its mere existence is nothing short of completely neccessary in todays world and its implementation is, in my opinion, an incredibly impressive feat of intelligence, perserverance and quick-thinking-problem-solving completed by engineers.  
 <br>
+
+
+![IP Address comparison.Ipv4 vs Ipv6](./IPv4-vs-IPv6.png)
+
 
 </br>
 
@@ -43,9 +47,39 @@ In terms of the development of the internet, ipv6 was an incredibly intelligent 
 Routers are used to connect devices such as computers or phones to the internet. Typically, a wireless router will connect directly with a modem. From there, information can be recieved or transmitted to the internet. Routers use built in attenas to communicate with devices on the home network. A wired router however, would connect directly from the modem to the device (computer).
 Earlier, i wrote about packets. Thats how information is broken down for "shipment". I then spoke about IP addresses, thats how the "shipment" knows where to go and where it came from. All of that is great but without routers, it doesnt mean much. See, the purpose of a router is to provide the framework for the other two actions to take place. Meaning, without network connectivity, the rest is meaningless. Routing is the ability to send or forward packets from my network to someone elses network (or vice versa).The role of the router is to connect the 2 (or more) networks and then manage the traffic within. Using something called a routing table (list of all possible paths on the network) routers are able to recieve packets, crosscheck the routing table and then figure out the fastest path to send that data along.
 Because of its capability to route traffic between devices and the internet, your home devices are able to connect to the internet.
-In terms of the development of the internet, routers are responsible for security, connectivity, packet filtering etc. These tasks are incredibly fascinating and seem to occur seemlessly thanks to the technology involved.  
+In terms of the development of the internet, routers have played a vital role as they are responsible for security, connectivity, packet filtering etc. These tasks are incredibly fascinating and seem to occur seemlessly thanks to the technology involved.  
+<br>  
+![Illustration of the function of routers](./modem-router-connection-illustration.webp)
+</br>  
 
-hi 
-hi      hi
-    hi 
-        hi
+**Domains and DNS**: Earlier, i wrote about IP addresses and their contribution to the function of the internet. One of the topics covered was Ipv6 and its Alphanumeric Hexadecimal notations. What a mouthful that is. When browsing the web, if we attempted to navigate our way around using IP addresses such as the ones Ipv6 provides, i suspect 90% of the population would struggle to memorize the address of even a single website. That could generate a problem. For us to browse the web more intuitively, we use something called **Domain Names**. Domain names are easily recognisable and you already have multiple memorised. For example, you already know the domain "_gmail_" and you already know the domain "_google_". Naturally, it is much easier to remember words, especially short words, and so, the **Domain Name System** (DNS) can act like a phonebook in the sense that, the complicated numbers are not what you need to know- only the names!  
+
+When you enter a domain name into a browser, DNS will translate that domain name into its IP address and youll find yourself arriving at your desired website.
+To write out the entire translation process of DNS to IP would result in quite a lenghty paragraph of complex terminology, so instead, i will simplify what is going on when we enter a domain name and it somehow spits out the correct IP address.  
+There are 4 DNS Servers involved with the process of loading a webpage. These servers are : **DNS Recursor, Root Nameserver, TLD Nameserver and Authoritative Nameserver.**  
+
+DNS Recursor: The recursor server handles queries from the clients machine, its role is to begin locating where the correlated IP address is and to also make any additional queries necessary in order to move forward with information that is both sufficient and as accurate as possible. The website "Cloudflare" likens the role of the Recursor server to that of a librarian, in the sense that a librarian will be asked where a particular book is located within a library.  
+
+Root Nameserver: This server is the where the intitial translating steps happen.These servers are capable of directly answering queries made about cache and stored records. Typically, the role of the root nameserver is to narrow down more specific locations that are needed to correctly translate the domain name into an IP.  It is worth noting, the name Root Nameserver is allocated due to where the server itself operates. This server operates in the "Root" of the DNS administration hierarchy.
+
+TLD Nameserver: TLD is an acronym that stands for Top Level Domain, using the library reference again (provided by the "Cloudflare" website), the TLD nameserver can be imagined as a specific rack of books stored in a library. By understanding the acronym, we can begin to notice the steps involved with narrowing down information relevant to the client query. This particular nameserver helps narrow down what were searching for due to it hosting the end of domain names. To clarfiy, if a website is called "www.google.com", the TLD server hosts the ".com" section of the domain name.  
+
+Authoritative Nameserver: This server is the final step in the resolving process,think of this server as a large ledger or a large phone book. If this server has access to the requested information/records, it will be able to provide the translation needed from Domain to IP. Assuming everything runs smoothly and records are accessible, this nameserver will then provide the requested IP for the relevant domain to the DNS recursor that orginally requested it.  
+
+So, what a journey that is, and to think this process happens in mere seconds with todays technology. In order to further understand, compare definitions against the picture below.  
+  
+   To concude this section and to define the contribution DNS makes and has made to the interent, the simplest way to do this is via a question.  
+How many Ipv6 addresses do you think you can remember? And if you couldnt remember any, how would you keep a record of sites you wanted to visit?
+<br> 
+
+</br>  
+
+![DNS explained](./DNS%20explained.webp)
+
+# **Question 3: Define the features of the following technologies that are essential in terms of the development of the internet:**
+ - TCP
+ - HTTP and HTTPS
+ - web browsers (requests, rendering and developer tools)
+
+# **Explain how each technology has contributed to the development of client and server communication over the internet (50 - 150 words for each technology**
+TCP:
