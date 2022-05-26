@@ -79,7 +79,40 @@ How many Ipv6 addresses do you think you can remember? And if you couldnt rememb
 # **Question 3: Define the features of the following technologies that are essential in terms of the development of the internet:**
  - TCP
  - HTTP and HTTPS
- - web browsers (requests, rendering and developer tools)
+ - Web browsers (requests, rendering and developer tools)
 
 # **Explain how each technology has contributed to the development of client and server communication over the internet (50 - 150 words for each technology**
-TCP:
+**TCP:** TCP is an acronym that stands for Transmission Control Protocol. TCP enables the exchange of messages between computing devices and applications over a network.  Its functionality is designed around sending packets across the internet and further ensuring that the delivery of the data is successful. This particular protocol is one of the most popular protocols and it defines the standard for end-to-end data delivery methods. TCP organizes data in a manner that can be transmitted between the client and the server, additionally, the integrity of said data is ensured; in short, this is due to a connection that is established between the client and the server. Said server remains active during the entirity of the transfer. This is a massive leap forward for the devlopment of the internet as it means we have a way to implement a guarentee that our data can be sent from one location to another in a manner secure/stable enough that we know it will arrive in full.<br>
+
+
+
+![TCP](./TCP.png)
+
+</br>
+  
+**HTTP and HTTPS:**  
+HTTP: Hyper-text-transfer-protocol is most commonly used for the transfer of data between web servers and web browsers. This transfer of data allows us to view webpages. HTTP is one of the earliest protocols related to the internet. One of the disadvantages of HTTP is that there is no encryption on data passed between servers and browsers. Regardless, a typical data exchange between server and browser would involve the client machine requesting data and the server responding tothe request.  
+
+HTTPS: Hyper-text-transfer-protocol-secure is the encrypted version of the aftermentioned HTTP. The purpose of encryption in regards to this protocol is to allow for the exchange of sensitive information or data with a server. Previously, with HTTP there was no encryption, consequently, this meant distributing sensitive information such as bank details was incredibly dangerous.
+HTTPS use SSL (Secure-socket-layer) keys to ensure confidentiality and security of its connections. HTTPS prefixes can be found easily on most sites that require senstive data exchange such as your local banks website. <br> 
+
+![HTTP_VS_HTTPS](./http-vs-https-comparison-diagram2.png)
+
+</br>
+
+**Web Browsers: (requests/rendering/developer tools):**  
+Requests: When you place a request via a browser, a number of operations take place. Previous questions explain in further detail exactly how those operations are undertaken so i will use this oppurtunity to shed light on the order they occur and how they co operate. So, you enter a website into your web browser. Firstly, the browser will go to DNS servers to find where exaclty the address youre looking for is located. Secondly, the browser will then send a HTTP request to the server. This step is made possible via the TCP technology previously covered. Thirdly, when/if the request is approved by the server, packets will begin exchanging between the server and the client.Forth and final, the recieved packets reassemble at the client end and your browser will display the webpage. This order or operations happens incredibly fast and is responsible for the way we enjoy the internet in modern times. The development of this technology has seen increased efficiency in recieving, actioning and responding to requests.
+
+**Rendering:** Put simply, the rendering of a website via a web browser is the process in which code, such as HTML or CSS is transformed into an interactive environment for a user to explore.While the webpage is loading, the server is sending files containing some type of formatting language, typically HTML. The browser engine takes these files and converts them from data into characters (HTML characters/code). HTML code is a readable formatting language that your web browser can use as a set of instructions. These instructions dictate where and how content is formatted and how it behaves. Because computers communicate directly using binary -which is not legible to the majority of people- the importance of rendering increases immensely. Websites need to be presented in a way that is legible, user friendly and intuitive. Renderding software/technology plays a vital role in coverting unfamiliar data into familiar means of content.  
+
+**Developer tools:** Developer tools are an incredibly useful addition to browsers. These tools allow the user to inspect a range of formatting information that was used in the construction of the web page. These tools allow minor editing capabilites, though it is worth noting, changes made in the developer tools apply in your-eyes-only type of application; meaning, developer tools will allow you to do something like change the colour of the font on the page but these changes are for display/learning reasons and do not actually implement any new formatting onto the webpage. Browsing through the webpage with developer tools open allows you to see what CSS styling was used, where it was applied and how it affects the targeted content. This employs major benefits for learning developers that see something they like and want to reciprocate. Developer tools will display HTML, CSS and Javascript as well as what assessts were requested by the webpage and how long they took to load! Developer tools are an incredibly useful addition to your browser and the accessibility and education they provide to learning or learned developers is incredibly valuable. <br>
+
+
+
+</br>
+
+# **Question 4: Identify 3 data structures used in the python programming language and explain the reason for using each.**
+
+# **Question 5: Describe the features of interpreters and compilers and how they are different.**
+
+# **Question 6: Indentify 2 commonly used programming languages and explain the benefits and drawbacks of each.**
