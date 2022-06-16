@@ -111,11 +111,48 @@ Requests: When you place a request via a browser, a number of operations take pl
 
 </br>
 
-# **Question 4: Identify 3 data structures used in the python programming language and explain the reason for using each.**
+# **Question 4: Identify 3 data structures used in the python programming language and explain the reason for using each.**  
+Data structures are fundamental constructes used when building programs in python.
+Each structure organises data in a particular way so that it can be accessed conveniently and easily.  3 native data structures are Dictionaries, Arrays and Sets/Multisets.  
 
-# **Question 5: Describe the features of interpreters and compilers and how they are different.**
+**Dictionaires:**  
+Dictionaries store an arbitrary number of things. Each of the stored objects can be accessed via a unique dictionary key.  
+Objects are defined as dictionary items by using the curly-braces ({}). You can assign keys a value by using the colon (:). ie  
+dictionary{  
+   < key>: < value>  
+   < key>: < value>  
+}  
 
-# **Question 6: Indentify 2 commonly used programming languages and explain the benefits and drawbacks of each.**
+In the dictionary created above, there are 2 keys. Both are assigned a value. This allows for efficient access to the dictionary.
+Dictionaires are incredibly dynamic and they grow at your own discresion.  
+
+**Array:**  
+Arrays are special variables in that they can hold multiple values at one time. Values stored in an array can be accessed by referring to the assigned index number. 
+For example:
+If you had an array with 3 cars, (Ford, Volvo and BMW - In that order respectively)
+You would be able to access the value volvo using the list index value of 1.  
+In the example i mentioned, Ford would be 0, Volvo would be 1 and BMW would be 2.  
+Values can also be modified as required. Once an array is defined, the "len" function can be used to return the lenght of the array. Put more simply, in the previous example, the length of the array is 3.
+Arrays are an incredible way to manage, edit, store and access a broad amount of information.  
+**Sets/Multisets:**  
+Sets are used in a similar way to arrays, they store values in a variable. The fascinating part about sets however is that they store multiple items in a single variable.  Think of it like assigning a list to a variable.  
+Set items are unordered, unchangeable and do not allow duplicate values. There are pros and cons to this. Sets can be created by listing all of the elements we want included in the set inside of curly brackets ({}). Sets are brilliant for scenarios where you may need to store different data types such as integers or floats.
+# **Question 5: Describe the features of interpreters and compilers and how they are different.**  
+Interpreters work by translating one line code/statement at a time into machine code. This means an interpreter can analyse source code quite quickly. A great feature of an interpreter is that it will continue translating source code until it encounters an error. This is incredibly useful for debugging as it allows us to see where the problems in our code are! Python is a language that uses an interpreter. For example, if i write some code in python and i make an error on line 5, python will translate the code into machine code until line 5. Once there, it will stop translating and alert us that line 5 contains an error!  
+
+A compiler on the other hand will scan the entrire document and translate it into machine code in one go. This method is slower than the interpreter's way in term of analysing the source code but it does end up being quicker in general  when considering overall processing time. Compilers are a little bit trickier to try and debug with because they only generate error messages after the entire source code document is scanned.
+
+# **Question 6: Indentify 2 commonly used programming languages and explain the benefits and drawbacks of each.**  
+2 of the most commonly used programming languages today are Python and Javascript. Both programming languages have benefits and drawbacks in their own way.  
+
+**Python:**  
+Beginning with python; Python is a beginner friendly language, due to its simplicity, it attracts beginners from around the world. Once beginners get involved with python, they are greeted by an incredibly large and friendly community that is more than happy to help answer any and all questions. Python is a flexible language that can extend to other programming languages such as C and C++.  Python is also considered highly scalable, meaning it can absolutely handle larger and more intricate apps/programs/projects. Some of the cons of Python involve its insecurity. Python is not 100% secure, to ensure your codes security, you would need to take extra and necessary steps. Another drawback that python users face is speed, particulary when compared to compiled languages. Python, being an interperted language is (overall) slower than compiled languages.
+
+**Javascript:**
+Javascript is another impressive programming language that is incredibly popular and sought after today. Like python, it boasts many pros but also has its own set of cons. 
+Javascript is known in part for its incredible versatlity. It is functional for both front and back end development. Through the use of libraries, it is able to work both ends in a rather impressive mannner. 
+Javascript is also incredibly popular because of how well it co-exsists/works with other languages. This type of cooperation is a massive pro in favour of javascript. But it is not without flaw. Some noteable cons regarding Javascript are things such as browser support. Different browsers interpret Javascript in different ways, you can already understand how this becomes an issue. It can also be quite difficult to debug using javascript due to browsers not displaying error messages. As a conseqeunce, developers may need to seriously hunt to find whatever issue they are experiencing. Another incredible downside to consider is the fact that a single error code can interrupt the rendering of Javascript. Typically broswers are quite tolerant of these errors but its still worth noting.
+
 
 # **Question 7: Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.**
 
@@ -151,4 +188,48 @@ This ensures that people are correctly acknowledged for their work/efforts and t
 
 **For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way: (Word count guide: 200 words max)**
 
-**Ethical Issue 1 - _Continuation of Access to users personal information ethical issue_ - identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way:**
+**Ethical Issue 1 - _Continuation of Access to users personal information ethical issue_ - identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way:**  
+Australian privacy law allows organisations and angencies to use and disclose your personal informationfor the reason they collected it. Unless you provide explicit consent, they cannot use your information for another reason/secondary purpose. There are a couple of exceptions to the law. The exceptions surround consent, whether they believe it is reasonably necessary to provide the information to authorites and that if the secondary purpose is for use of the information in the courts, tribunal orders. With strict laws surrounding the use of collected personal information, i believe it does indeed provide a clear framework for develops to abide by. Having this framework to understand and abide means that developers have a tangible, consistent manner that they can incoporate into their work. Without such a framework, it may become confusing for a developer in terms of how they can and should operate and conduct themselves. To summarise, yes, 
+Australian privacy laws help assist devlopers to act and conduct themselves in an ethical way by providing the framework for how to act in an ethical way.
+
+
+**Ethical Issue 2 - _Continuation of Intellectual property, copyright, and acknowledgement_ identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way:**  
+Copyright law in australia defines the legally enforceable rights of creators of creative and artistic works under australian law. To simplify, this means, property created is credited to its author for the benefit it provides the community. Doing this, it encourages innovation and also encourages the development of said creations. Copyright aims to provide credit to authors without hindering access or usage of study, research or education material. This prevents a monopoly exotring access to this type of content. Instead, people are able to reference, quote and paraphrase published and copyrighted works. This added flexibility around copyright is incredible for developers. Developers are able to innovate and create with full confidence they shall retain credit for their efforts; students on the otherhand are able to absorb this media, reuse and innovate off of it and provide back to the community in their own way. This structure is incredibly beneficial for guiding ethical actions for developers, like previously said, ethical frameworks are brilliant because they provide a basis for developers to act upon and according to.
+
+**Question 7 Final Part: Conduct research into a case study of ONE of the ethical issues you have chosen. Discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches:**  <br>
+
+</br>
+
+**Link to case study spoken about for this question:**  
+https://www.brainkart.com/article/Case-Studies-of-Ethics--Privacy-Rights_9741/
+
+
+The case study i have chosen to study and speak about is a case study surrounding individuals privacy rights regarding personal information and the use case of said information.  
+In this case study, Donald works for a county records company. He has access to files regarding property tax records. Ethel, a researcher conducting a scientific study, has been granted access to the numerical portion of this data but **not** the corrosponding names/owners of the data. Ethel later finds information she wishes to use, however, she needs the names and addressess of the owners of the data so that she can contact these people for information and permission to do further study.The case study then asks if Donald should provide this information to Ethel.  
+This is an ethical issue due to how personal information is allowed to be used, be it for its primary or secondary use cases.  
+
+An IT professional presented with this issue should consider a few things before making their decision regarding the release of this information. The first idea to consider is the legality of this request. Is this request reasonable? Is it legal ? Is it in lines with the primary reason this information was provided? In this particular case, no, the request to release the information would constitute a secondary use case for the data and would not be legally permissable without consent of the owners of the data. The second idea for an IT professional to consider is **why** this information is being requested. If the information was being requested in line with a study being conducted by or on behalf of the courts, then Donald may very well be in line to provide the information to Ethel.  
+The last idea that an IT professional could consider is that Ethel has already been granted access to some information to conduct scientific studies, however, in order to finish said studies, she needs further permissions. Is it right of the IT professional  to provide this information because she already has _some_ access anyway?  
+The answer again to this question would be no. Although Ethel already has some access permissions, she does not have permission pertinent to the names and addresses of the data owners. Providing further information that she is not granted to have would immediately become an ethical breach of conduct. Privacy laws surrounding data ensure privacy for the data owners, specifically in cases where the data is provided by said owners. Meaning, the owners have provided this information for one and only one use case. It is not the place for Donald or Ethel to decide whether that information can be used for a secondary purpose.
+Imagine a scenario where Donald decides that Ethel already has _some_ permission and so he decides to provide any and all data she requests, even if its outside the scope of her original permissions. An issue with this situation is that Donald is assuming that Ethels intentions are true to what she says they are and as such, means that the data was released via means of trusting someone to do the right thing with it. Donald, in this situation, would not be in a postition where he could accurately decide if Ethel would do what she said she inteded to do with the data. So, not only is this illegal, it breaches privacy consumer laws, it creates an immediate ethical breach and it is merely built on the basis of hoping someone is telling the truth.  
+
+**So how should an IT professional respond in this situation and how might they mitigate ethical breaches?**  
+For an IT professional  to mitigate the likelihood of an ethical breach, they must conduct themselves in a way that strives to first prevent any likelihood of a breach even occuring. 
+Although that is not always possible, it is here.  
+Ethel was granted access to data under the rule that the data remained anynomous. The scopes of her work changing does not impose any new responsibilities on the IT professional. The IT professional has access to data that was provided for a primary purpose. Since a secondary purpose for the data cannot be requested without breaching privacy laws, access should be immediately denied.  
+
+
+# **Question 8: Explain control flow, using examples from the Python programming language:**  
+# **Question 9: Explain the difference between type coercion and type conversion. Are either of these used in Python?:**
+# **Question 10: Explain Data Types, using examples:**
+In python, there are mulitple types of data that variables can store. These data types can all do different things. Some of these data types may share similarities and as such, they are grouped into parent "data types". For example, when dealing with numerical data, 3 common data types are: Interger, Float and Complex. All of these types of data are used to store numeric data in variables. Another data type would be the String data type. This data type is used for sentences and words. 
+Boolean types can be used for arguments and are my personal favourite because of their similarity to binarny (True, False vs 0, 1).
+In python, the data type of data is set when it is assigned to a variable. To simplify, to a person, "Hello world" is easily identfiable as a sentence; without assigning it to a variable however, python would be unable to figure out what the value of those charecters (letters) are. So, when "hello world" is assigned to a variable as a string data type, the computer understands how to interpret and convert that information.
+# **Question 11: Here’s the problem: There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?:**
+# **Question 12: Identify and explain the error in the code snippet below that is preventing the correct execution of the program:**  
+In the code snippet, the type error is  unsupported operand type(s) for /: 'str' and 'int'. 
+What this is telling us it that python is unable to complete the calculation because "celsius" is a string and "9/5" is an integer.  I was able to correct this error in python by converting celsius (inputted by user) into a float value. Now, the calculation python makes is between two numerical values. I also added text prompts for a smoother ineraction between user and terminal.
+The correct and functional code for this problem looks like: 
+![Q12 Snippet](./q12%20snippet.png)  
+
+# **Question 13:The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.**
