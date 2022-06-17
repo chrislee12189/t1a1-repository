@@ -125,22 +125,20 @@ dictionary{
 
 In the dictionary created above, there are 2 keys. Both are assigned a value. This allows for efficient access to the dictionary.
 Dictionaires are incredibly dynamic and they grow at your own discresion.  
-
-**Array:**  
-Arrays are special variables in that they can hold multiple values at one time. Values stored in an array can be accessed by referring to the assigned index number. 
-For example:
-If you had an array with 3 cars, (Ford, Volvo and BMW - In that order respectively)
-You would be able to access the value volvo using the list index value of 1.  
-In the example i mentioned, Ford would be 0, Volvo would be 1 and BMW would be 2.  
-Values can also be modified as required. Once an array is defined, the "len" function can be used to return the lenght of the array. Put more simply, in the previous example, the length of the array is 3.
-Arrays are an incredible way to manage, edit, store and access a broad amount of information.  
+![Python_Dictionaries](./python_dictionary.jpg)  
+**Tuple:**  
+Tuples are basic python data structures used for ordered collections of objects. They are somewhat limited in comparison to other data structures like lists. Tuples are immutable, meaning that after the object is created and had its value assigned, it can **not** have its value modified.  
+When using Tuples, parentheses are not compulsory, though it is reccomended. So, why use a Tuple considering it is immutable? Why not use a list or something like that? Well, the intended use case for Tuples is scenarios where you intend to keep an object/value intact throughout the life of your program. Put better, Tuples protect against accidental modification/removal of data. So now, in a scenario where you know you have a value you wish to apply and you know it is not intended to be changed, you incoporate the use of Tuples. Another fascinating feature of Tuples is that due to their immutability, python sees them as a single entity! The benefits of this arrise around the speed of new exectuions, however, the explination as to why seemed to get pretty tech heavy so ill keep it simple and leave it at that.  
+![Python_Tuple](./python-tuple.jpg)  
 **Sets/Multisets:**  
-Sets are used in a similar way to arrays, they store values in a variable. The fascinating part about sets however is that they store multiple items in a single variable.  Think of it like assigning a list to a variable.  
-Set items are unordered, unchangeable and do not allow duplicate values. There are pros and cons to this. Sets can be created by listing all of the elements we want included in the set inside of curly brackets ({}). Sets are brilliant for scenarios where you may need to store different data types such as integers or floats.
+Sets are used in a similar way to tuples, they store values in a variable. The fascinating part about sets however is that they store multiple items in a single variable.  Think of it like assigning a list to a variable.  
+Set items are unordered, unchangeable and do not allow duplicate values. There are pros and cons to this. Sets can be created by listing all of the elements we want included in the set inside of curly brackets ({}). Sets are brilliant for scenarios where you may need to store different data types such as integers or floats.  
+![Python_Sets](./python-sets.jpg)
 # **Question 5: Describe the features of interpreters and compilers and how they are different.**  
 Interpreters work by translating one line code/statement at a time into machine code. This means an interpreter can analyse source code quite quickly. A great feature of an interpreter is that it will continue translating source code until it encounters an error. This is incredibly useful for debugging as it allows us to see where the problems in our code are! Python is a language that uses an interpreter. For example, if i write some code in python and i make an error on line 5, python will translate the code into machine code until line 5. Once there, it will stop translating and alert us that line 5 contains an error!  
 
-A compiler on the other hand will scan the entrire document and translate it into machine code in one go. This method is slower than the interpreter's way in term of analysing the source code but it does end up being quicker in general  when considering overall processing time. Compilers are a little bit trickier to try and debug with because they only generate error messages after the entire source code document is scanned.
+A compiler on the other hand will scan the entrire document and translate it into machine code in one go. This method is slower than the interpreter's way in term of analysing the source code but it does end up being quicker in general  when considering overall processing time. Compilers are a little bit trickier to try and debug with because they only generate error messages after the entire source code document is scanned.  
+![interpreter_vs_compiler](./inter_vs_comp.jpeg)  
 
 # **Question 6: Indentify 2 commonly used programming languages and explain the benefits and drawbacks of each.**  
 2 of the most commonly used programming languages today are Python and Javascript. Both programming languages have benefits and drawbacks in their own way.  
@@ -220,7 +218,25 @@ Ethel was granted access to data under the rule that the data remained anynomous
 
 
 # **Question 8: Explain control flow, using examples from the Python programming language:**  
-# **Question 9: Explain the difference between type coercion and type conversion. Are either of these used in Python?:**
+Python has 3 main control flow statements, they are **Sequential, Selection and Repetition.**    
+**Sequential:**  
+Sequential is the default control flow, "sequential statements" merely refers to an execution process that happens in a sequence. For example, when writing code in a .py file, we begin on line 1; lets say we code until we reach Line 10. Seuquentially, the file will be executed in order of 1,2,3,4,5,6,7,8,9 and finally 10. The sequence in this instance is in the correct numerical order of the numbers referencing the line were on.  
+
+**Selection:**  
+Selection statements are incredibly interesting and behave differently according to defined logic. To rephrase, selection statements are also known as "Decision Control Statements" meaning our program will test several conditions and execute instructions relevant to the "True" condition that we have defined. To elaborate, when we write conditional statements, we provide 2 options - true or false - as well as conditional code. When our program executes, it will reach the conditonal statements, test them and then proceed based upon the result that the tests returned. The complexity of selection statements increases once we introduce "if" and "else" statements but if we consider how the program executes these conditions, then we can understand that it is not overly complicated.
+For example, we provide our program with an IF statment and we provide it with an ELSE statement. When we run the program, if the conditons of the IF statement are true, our code will execute the IF statement code. However, if the conditions of our IF statement are false, it will execute the ELSE statment code. 
+
+**Repetition:**  
+Repetition statements are used to make a block of programming instructions repeat. Typically, this is done using FOR loops and WHILE loops. FOR loops are used in conjunction with lists, tuples, sets and dictionaries. FOR loops are a control flow statement that are used to repeatadly execute a block of statements based upon a predetermined number of times (repeats). WHILE loops on the other hand, although similar and easily confused, will continue to repeat indefinitely so long as the condition  is true.
+# **Question 9: Explain the difference between type coercion and type conversion. Are either of these used in Python?:**  
+**Type Conversion:**  
+Type conversion is a process in python in which a user converts a data type from one type into another. Python has multiple built in type conversion functions and many of them are actually incredibly frequently used. For example, int(), float() and str() are all common data conversion types. So what do they actually do and where do they fit into everday programming in python? Good question. Python assigns data types to inputted data. It does this for many reasons, one being that python is a computer program and does not inherently understand context. To python, letters, numbers, symbols, its all the same stuff. Python needs a way to understand data and what the data represents/its context. This is where data types come in, but data types do not always get along very nicely. For example, if we assign the letter "a" a value of 15, the data type python would assign to "a" would be an integer. If we were to later assign a value to the letter "b" at an amount of '45', python would assign "b" the data type of string. That is because the 45 was surrounding with quotation marks and so python thinks it is being used in the context of a sentence. To a person, you could have them add 15 and 45 and they would be able to pick up on the context shift in person. Python cannot, python, for this example, was provided an integer value of 15 and a string of 45. For us to be able to put those numbers together in a mathematical equation within python, we would need to type convert the string into an integer. After that, python would understand that we want to calculate those numbers together as a mathematical equation.  
+
+**Type coercion:**  
+Type coercion, unlike type conversion, is an automatic process undertaken by python to avoid data loss when undertaking mathematical equations.
+For example, when an integer and a float are added together, type coercion automatically outpouts the answer as a float to prevent any data loss. eg. 5 + 1.2 = 7.2  
+5 in the above equation was an integer. 7.2 was a float. If python had of added those numbers together as integers only it would have returned a number of 7. Therfore, technically, we would have lost the value of the .2.  
+While in my particular example, the loss of the .2 is not serious, when it comes to more serious equations or equations where we need as much accuracy as possible, this is a great feature to prevent any data loss.
 # **Question 10: Explain Data Types, using examples:**
 In python, there are mulitple types of data that variables can store. These data types can all do different things. Some of these data types may share similarities and as such, they are grouped into parent "data types". For example, when dealing with numerical data, 3 common data types are: Interger, Float and Complex. All of these types of data are used to store numeric data in variables. Another data type would be the String data type. This data type is used for sentences and words. 
 Boolean types can be used for arguments and are my personal favourite because of their similarity to binarny (True, False vs 0, 1).
