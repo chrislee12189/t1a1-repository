@@ -25,7 +25,7 @@ This is where packets come in. <br>
 Packets are seperated into incredibly small pieces of data - **_64kb_**- each of these pieces of data carries information that i being sent from one computer to another. For example; some of these packets will contain information regarding the sender, such as their ip address, others will contain information that explains how many packets the reciever should expect to see. Other packets serve purposes such as informing the recieving computer when it has reached the end of the packet sequence.<br>  
 </br>Because of the way this data is structure during sending, we are able to communicate with large networks and send information across the globe seemingly instantly. In terms of the development of the internet, i strongly believe that packets have contributed massively. Without packets, trasnfer efficiency of data  would be congested and slow, it would be a nightmare in todays world and would seriously hinder the progression and development of tech.  
 <br>
-![packets pic](./packets.png)
+![packets pic](packets.png)
 </br>
 
 **IP Addressess**: In order for us to transfer data across the internet, we need to know _where_ to actually send said data. Comparable to your physical street address, an IP address is used as a means to identify hardware on networks. To simplify, if you wanted to send a letter to a friend, you would need to know what their address is. Their physical address identifies their house on a street with multiple other houses. The same principle applies to computers. Having IP addresses, allows both devices to connect and trasnfer data over the internet. IP addresses are unique  and consist of a string of numbers seperated by periods. For ipv4, the older IP framework, the string of numbers are seperated into 4 sections. Each section ranges between 0 and 255. This means that an ipv4 IP address would look something like this: **127.0.0.1**.
@@ -38,7 +38,7 @@ In terms of the development of the internet, ipv6 was an incredibly intelligent 
 <br>
 
 
-![IP Address comparison.Ipv4 vs Ipv6](./IPv4-vs-IPv6.png)
+![IP Address comparison.Ipv4 vs Ipv6](IPv4-vs-IPv6.png)
 
 
 </br>
@@ -49,7 +49,7 @@ Earlier, i wrote about packets. Thats how information is broken down for "shipme
 Because of its capability to route traffic between devices and the internet, your home devices are able to connect to the internet.
 In terms of the development of the internet, routers have played a vital role as they are responsible for security, connectivity, packet filtering etc. These tasks are incredibly fascinating and seem to occur seemlessly thanks to the technology involved.  
 <br>  
-![Illustration of the function of routers](./modem-router-connection-illustration.webp)
+![Illustration of the function of routers](modem-router-connection-illustration.webp)
 </br>  
 
 **Domains and DNS**: Earlier, i wrote about IP addresses and their contribution to the function of the internet. One of the topics covered was Ipv6 and its Alphanumeric Hexadecimal notations. What a mouthful that is. When browsing the web, if we attempted to navigate our way around using IP addresses such as the ones Ipv6 provides, i suspect 90% of the population would struggle to memorize the address of even a single website. That could generate a problem. For us to browse the web more intuitively, we use something called **Domain Names**. Domain names are easily recognisable and you already have multiple memorised. For example, you already know the domain "_gmail_" and you already know the domain "_google_". Naturally, it is much easier to remember words, especially short words, and so, the **Domain Name System** (DNS) can act like a phonebook in the sense that, the complicated numbers are not what you need to know- only the names!  
@@ -74,7 +74,7 @@ How many Ipv6 addresses do you think you can remember? And if you couldnt rememb
 
 </br>  
 
-![DNS explained](./DNS%20explained.webp)
+![DNS explained](DNS%20explained.webp)
 
 # **Question 3: Define the features of the following technologies that are essential in terms of the development of the internet:**
  - TCP
@@ -86,7 +86,7 @@ How many Ipv6 addresses do you think you can remember? And if you couldnt rememb
 
 
 
-![TCP](./TCP.png)
+![TCP](TCP.png)
 
 </br>
   
@@ -96,7 +96,7 @@ HTTP: Hyper-text-transfer-protocol is most commonly used for the transfer of dat
 HTTPS: Hyper-text-transfer-protocol-secure is the encrypted version of the aftermentioned HTTP. The purpose of encryption in regards to this protocol is to allow for the exchange of sensitive information or data with a server. Previously, with HTTP there was no encryption, consequently, this meant distributing sensitive information such as bank details was incredibly dangerous.
 HTTPS use SSL (Secure-socket-layer) keys to ensure confidentiality and security of its connections. HTTPS prefixes can be found easily on most sites that require senstive data exchange such as your local banks website. <br> 
 
-![HTTP_VS_HTTPS](./http-vs-https-comparison-diagram2.png)
+![HTTP_VS_HTTPS](http-vs-https-comparison-diagram2.png)
 
 </br>
 
@@ -125,20 +125,20 @@ dictionary{
 
 In the dictionary created above, there are 2 keys. Both are assigned a value. This allows for efficient access to the dictionary.
 Dictionaires are incredibly dynamic and they grow at your own discresion.  
-![Python_Dictionaries](./python_dictionary.jpg)  
+![Python_Dictionaries](python_dictionary.jpg)  
 **Tuple:**  
 Tuples are basic python data structures used for ordered collections of objects. They are somewhat limited in comparison to other data structures like lists. Tuples are immutable, meaning that after the object is created and had its value assigned, it can **not** have its value modified.  
 When using Tuples, parentheses are not compulsory, though it is reccomended. So, why use a Tuple considering it is immutable? Why not use a list or something like that? Well, the intended use case for Tuples is scenarios where you intend to keep an object/value intact throughout the life of your program. Put better, Tuples protect against accidental modification/removal of data. So now, in a scenario where you know you have a value you wish to apply and you know it is not intended to be changed, you incoporate the use of Tuples. Another fascinating feature of Tuples is that due to their immutability, python sees them as a single entity! The benefits of this arrise around the speed of new exectuions, however, the explination as to why seemed to get pretty tech heavy so ill keep it simple and leave it at that.  
-![Python_Tuple](./python-tuple.jpg)  
+![Python_Tuple](python-tuple.jpg)  
 **Sets/Multisets:**  
 Sets are used in a similar way to tuples, they store values in a variable. The fascinating part about sets however is that they store multiple items in a single variable.  Think of it like assigning a list to a variable.  
 Set items are unordered, unchangeable and do not allow duplicate values. There are pros and cons to this. Sets can be created by listing all of the elements we want included in the set inside of curly brackets ({}). Sets are brilliant for scenarios where you may need to store different data types such as integers or floats.  
-![Python_Sets](./python-sets.jpg)
+![Python_Sets](python-sets.jpg)
 # **Question 5: Describe the features of interpreters and compilers and how they are different.**  
 Interpreters work by translating one line code/statement at a time into machine code. This means an interpreter can analyse source code quite quickly. A great feature of an interpreter is that it will continue translating source code until it encounters an error. This is incredibly useful for debugging as it allows us to see where the problems in our code are! Python is a language that uses an interpreter. For example, if i write some code in python and i make an error on line 5, python will translate the code into machine code until line 5. Once there, it will stop translating and alert us that line 5 contains an error!  
 
 A compiler on the other hand will scan the entrire document and translate it into machine code in one go. This method is slower than the interpreter's way in term of analysing the source code but it does end up being quicker in general  when considering overall processing time. Compilers are a little bit trickier to try and debug with because they only generate error messages after the entire source code document is scanned.  
-![interpreter_vs_compiler](./inter_vs_comp.jpeg)  
+![interpreter_vs_compiler](inter_vs_comp.jpeg)  
 
 # **Question 6: Indentify 2 commonly used programming languages and explain the benefits and drawbacks of each.**  
 2 of the most commonly used programming languages today are Python and Javascript. Both programming languages have benefits and drawbacks in their own way.  
@@ -241,11 +241,214 @@ While in my particular example, the loss of the .2 is not serious, when it comes
 In python, there are mulitple types of data that variables can store. These data types can all do different things. Some of these data types may share similarities and as such, they are grouped into parent "data types". For example, when dealing with numerical data, 3 common data types are: Interger, Float and Complex. All of these types of data are used to store numeric data in variables. Another data type would be the String data type. This data type is used for sentences and words. 
 Boolean types can be used for arguments and are my personal favourite because of their similarity to binarny (True, False vs 0, 1).
 In python, the data type of data is set when it is assigned to a variable. To simplify, to a person, "Hello world" is easily identfiable as a sentence; without assigning it to a variable however, python would be unable to figure out what the value of those charecters (letters) are. So, when "hello world" is assigned to a variable as a string data type, the computer understands how to interpret and convert that information.
-# **Question 11: Here’s the problem: There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?:**
+# **Question 11: Here’s the problem: There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?:**  
+To build this code, i needed to be able to take user input and respond to it in a way that mimics real life interactions. So, my program greets the user and first tries to find out if they want to order a meal. If they dont, the program exits with a farewell message. If they do, the program will proceed to display a menu list showcasing all possible items that users can order. I have limited them to 1 option only per order. The menu list is a dictionary hidden from the user that coontains the values and keys of all menu items. To simplify, the menu features "Pasta", the pasta is worth "5.00". When a user makes a selection from the menu, the program takes that input and stores it in a variable called "my_var". The program then checks the dictionary for the stored variable. When the program finds the stored variable in the dictionary (the stored variable will match a key in the dictionary) it will print out the value associated with that specific key. To the user, this displays as:  
+- The user agrees that they want to order a meal
+- A menu list is displayed to them and they select 1 item from the list
+- The program then returns the cost of the item they want to order  
+
+![Program_Code](resteraunt_program_code.png)    
+Pictured below, is a screenshot of the program when executed in the terminal. In this picture, the user selected "Toast" as the item they want to order and so, the program displayed the correct price for that menu item. For the most part, the user will not be able to tell that the menu list is actually a dictionary that is holding the values. To us however, you may notice the square brackets at the beginning and end of the menu list. This displays because line 23 in the code tells my program to print a list of the menu list keys. It bears no problem to me or the user to have it display like that, the reason for the brackets is because my program is displaying a list of keys stored in my dictionary as opposed to a list of strings being used to name all the items.
+![Code_Execution_in_Terminal](resteraunt_program_execution.png)
 # **Question 12: Identify and explain the error in the code snippet below that is preventing the correct execution of the program:**  
 In the code snippet, the type error is  unsupported operand type(s) for /: 'str' and 'int'. 
 What this is telling us it that python is unable to complete the calculation because "celsius" is a string and "9/5" is an integer.  I was able to correct this error in python by converting celsius (inputted by user) into a float value. Now, the calculation python makes is between two numerical values. I also added text prompts for a smoother ineraction between user and terminal.
-The correct and functional code for this problem looks like: 
-![Q12 Snippet](./q12%20snippet.png)  
+The correct and functional code for this problem looks like:  
+![Q12 Snippet](q12%20snippet.png)  
 
-# **Question 13:The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.**
+# **Question 13:The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.**  
+This question quite literally broke my sanity. It took me 2 weeks and an ungodly amount of hours/research to figure out what was going on and why it wasnt working. I rebuilt this code from the ground up to create a functional program that compares elements in every iteration and if the value is greater than its comaprison, swaps them. Now, the output of the program correctly sorts the elements in ascending order.  
+![Corrected_code](q13_correct_code.png)
+As seen above, my code differs from the questions code in that i am using a "for" loop instead of a "while" loop. The purpose of using a "for" loop instead of a "while" loop, is that i already know how many iterations need to take place to solve/arrange the list. Due to this, i removed the count in the original code. My program will execute until elements are sorted in ascending numerical order.
+The code works like this:  
+- 1st "for" loop will iterate over the elements in this list excluding the last  
+- 2nd "for" loop (nested) will iterate over the elements after the first loop  
+- An "if" statement is then introduced to compare the elements in the 1st loop vs the nested loop 
+- If the element of the 1st loop is greater than the element of the nested loop, the program swaps their position  
+- These iterations continue until the numbers are sorted in ascending numerical order
+- There are 2 print functions in the program. The first, nested print statment, will print every iteration of the loop until the loop is sorted  
+- The final print function prints the sorted list only  
+![terminal_output_q13](q13_sorted.png)
+
+# **Question 14: Demonstrate your algorithmic thinking through completing the following two tasks, in order:<br>            </br> 1: Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations.<br>            </br> 2: Write pseudocode for the process outlined in your flowchart.**  
+![flowchart_1](flowchart_1.png)  
+I have created 2 flowcharts, one in a language as close to functional code as possible and the second, psuedocode.  
+The reason for this is because in order to complete this question, i needed to learn what a prime number was, how to calculate for it, how to incorporate that calculation into functional code and lastly, to demonstrate my thinking along the way. In order to have psuedocode written in a correct way, i truly needed to understand how the code would function correctly so that i could simplify it from there.  
+The legend for my flowcharts is as followed: 
+-Green = The beginning of the program
+-Orange = Processes/A step taken
+-Purple = A decision/ An outcome
+-Blue = Similar to purple, i only seperated one outcome color from the rest. This was to show a difinitive end for a certain result. (Meaning, if primenum = False)
+![flowchart_2](flowchart_2.png)  
+To further show flowchart functionality, i took the flowchart and turned it into functional code. It is pictured below so that you can see the entire process of this question.  
+![results](primenumcode.png)
+# **Question 15: Write pseudocode OR Python code for the following problem:**                                           
+## **You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.**  
+For this question i wrote psuedocode. The way i write psuedocode, is by taking the question and breaking it down into single tasks first. From a developer standpoint, the translation of a single step/requirment from psuedocode into python code is a lot easier than having large detailed steps involved, even if they are written in plain english.  
+Pictured below is the psuedocode.  
+![Psuedocode](psuedocode.png)  
+Firstly, the question/goal is presented as asked by the client.  
+
+Secondly, the goal of the program is taken and split into as many individual functions as possible. ie, we need 2 variables, we need a way to print a message to the user etc.  
+
+Thirdly, i take down all the tests we need to be able to run in the program and write them out in simple english that remains close enough to how it would look in python.
+
+
+# **Question 16: 	ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score" based on the specific competencies they require for this role; the more important the skill is for ACME corp, the more points it contributes to the "coding skill score" The skills are weighted as follows:**
+ - Python (1)
+ - Ruby (2)
+ - Bash (4)
+ - Git (8)
+ - HTML (16)
+ - TDD (32)
+ - CSS (64)
+ - JavaScript (128)
+​
+##  **Write a program that allows a user to input their skills and then tells them**
+## **a) Their overall "coding skill score"** 
+## **b) Skills they may want to learn, and how much each one would improve their score**
+  
+This program went through a million different approaches to arrive at the stage it is in now. Of the million and one different versions, i continued to run into problems that were perhaps too advanced for my level of understanding. As such, the program was stripped back to barebones functionality and rebuilt into a functional and far less fancy version. Results over presentation i suppose.  
+The program works like this:  
+ - The user is greeted with a few lines of text, familiarising them with what the program wants
+ - The user reads the prompts and then reads the list of languages in the test.
+ - The user will then choose as many or as few languages as they know
+ - For each language they know, they are told to enter its corrosponding score, followed by a space if they know another
+ - User input is taken and stored in a list
+ - Once the user has finished inputting, they press enter and the program returns what they entered alongside the total sum/coding skill score they achieved
+ - IF the user knew every language, a specific message prints to them
+ - IF the user only knew a few languages, the program prints a message to suggest study goals to them
+![coding_skill_program](q16_final.png)  
+![terminal_outcome_1](q16_terminal_outcome1.png)
+![terminal_outcome_2](q16_terminal_outcome2.png)
+
+## **Additional comments regarding this program**:  
+This program went through an insane amount of changes, things were cut, added, changed, readded and recut. For what it is worth, i want to explain my original approach and the challenges i had.  
+Originally, i had the program setup to take inputs and store them in individual variables + added to a user generated list.
+This was not very "DRY" and had an insane amount of code. Once the input was stored inside variables and the user generated list had something inside of it. I wanted to take the user generated list, have my program compare it against the dictionary and IF it found a variable that matched a key, print out the value of said key.  I never managed to get this to work and i couldnt find any good documentation or tutorials on doing it. 
+This approach faced enourmous challenges, such as how limited the functionally was.  
+For example, i had coded variables, if statments, empty lists, dictionaries etc but it all completely relied on the user entering values in the order i predecided. Meaning, i coded it to accept "Python" as choice 1 and "Ruby" as choice 2. If the user entered "Ruby" as choice 1 and "Python" as choice 2, the program did nothing. You can already imagine the near infinite ways a user could enter 8 options. If they entered x amount of languages in a specific way it worked, if they entered less or more or in a different order, it broke.  
+The point of this comment section is to point out, while the functionality of the current version works, its not what i originally had in mind.
+
+
+# ATTRIBUTION / BIBLIOGRAPHY
+
+All of the work herein the document was written in my own words/paraphrased to the best of my ability and where possible. The full list of all the used learning material and sources are here:  
+
+## **Question 1:**  
+
+https://courses.lumenlearning.com/suny-the-missing-link-an-introduction-to-web-development-and-programming/chapter/chapter-7-markup-languages/  
+
+
+https://www.thoughtco.com/what-are-markup-languages-3468655#:~:text=For%20web%20design%20and%20development,HTML%2C%20XML%2C%20and%20XHTML.
+
+## **Question 2:** 
+
+Packets
+
+https://www.techevaluate.com/why-do-we-break-data-into-packets/
+https://www.techopedia.com/definition/6751/data-packet
+https://www.geek-computer.com/wiki/why-do-computers-use-binary-numbers#:~:text=The%20main%20reason%20the%20binary,signals%2C%20either%20on%20or%20off.
+https://computer.howstuffworks.com/question525.htm
+
+Ip addresses
+
+https://www.avast.com/c-ipv4-vs-ipv6-addresses
+
+https://www.wpbeginner.com/glossary/ip-address/
+
+
+Routers and Routing  
+https://www.avast.com/c-ipv4-vs-ipv6-addresses
+https://community.fs.com/blog/ipv4-vs-ipv6-whats-the-difference.html#:~:text=The%20main%20difference%20between%20IPv4,header%20as%20compared%20to%20IPv4.
+
+Domains and Dns
+
+https://www.cloudflare.com/en-au/learning/dns/what-is-dns/#:~:text=The%20Domain%20Name%20System%20(DNS,browsers%20can%20load%20Internet%20resources.
+https://www.cloudflare.com/en-gb/learning/dns/glossary/dns-root-server/  
+
+## **Question 3:**
+
+Tcp
+https://www.fortinet.com/resources/cyberglossary/tcp-ip  
+
+Http and Https  
+https://www.cloudflare.com/en-au/learning/ddos/glossary/hypertext-transfer-protocol-http/
+https://www.globalsign.com/en/blog/the-difference-between-http-and-https
+https://developer.mozilla.org/en-US/docs/Web/HTTP
+https://developer.mozilla.org/en-US/docs/Glossary/https
+https://www.keyfactor.com/blog/what-is-ssl/  
+
+
+Web browser requests   
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works  
+
+Rendering  
+https://www.seobility.net/en/wiki/Rendering#cite_note-1
+
+Dev tools  
+https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools  
+
+## **Question 4:**  
+
+https://www.w3schools.com/python/python_sets_methods.asp 
+
+*note: the reference below was used before further class time taught me that an array is **not** a python data structure*
+https://www.w3schools.com/python/python_arrays.asp
+
+https://realpython.com/python-dicts/  
+
+## **Question 5:**  
+https://www.businessinsider.in/difference-between-compiler-and-interpreter/articleshow/69523408.cms#:~:text=Interpreter%20translates%20just%20one%20statement,the%20process%20is%20much%20slower.  
+
+## **Question 6:**
+
+python pro vs cons  
+https://www.pixelcrayons.com/blog/python-pros-and-cons/  
+
+javascript pros vs cons
+
+https://data-flair.training/blogs/advantages-disadvantages-javascript/  
+
+## **Question 7:**  
+
+ethical issues  
+https://er.educause.edu/articles/2017/3/ethics-and-the-it-professional  
+
+https://www.sans.org/white-papers/1535/  
+
+https://sansorg.egnyte.com/dl/F56Fm9l4cQ
+
+https://content.nfplaw.org.au/wp-content/uploads/2022/02/Guide_to_Intellectual_Property_law.pdf  
+
+https://www.nfplaw.org.au/free-resources/advertising/understanding-intellectual-property-laws  
+
+https://www.stopfakes.gov/article?id=Why-is-Intellectual-Property-Important#:~:text=Intellectual%20property%20protection%20is%20critical,less%20on%20research%20and%20development.  
+
+https://www.austrade.gov.au/international/invest/guide-to-investing/running-a-business/understanding-australian-business-regulation/australian-intellectual-property-laws  
+
+Cite ethical issue legal documentation.  
+
+Ethical issue 1   
+https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/use-and-disclosure-of-personal-information  
+
+Ethical issue 2
+https://en.wikipedia.org/wiki/Copyright_law_of_Australia  
+
+## **Question 8:**  
+https://developer.mozilla.org/en-US/docs/Glossary/Control_flow    
+ 
+https://study.com/academy/lesson/for-loops-in-python-definition-examples.html  
+
+https://www.educative.io/answers/what-are-control-flow-statements-in-python
+
+
+## **Question 9:**  
+Type conversion vs coercion   
+https://medium.com/analytics-vidhya/python-fundamentals-for-everybody-type-conversion-vs-type-coercion-34234e99c9c4  
+
+## **Question 10:**  
+- Topic covered in class
+
+## **Remaining Questions:** 
+Remaining questions were solved through class learning, 1 on 1 questions with educators, W3 schools docs, ED lessons, Youtube tutorials on specific peices of overall problems etc
